@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bootstrap Demo</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.7-dist/css/bootstrap-responsive.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/webapp/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"
+          data-href="/webapp/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet"
+          id="bs-theme-stylesheet">
+
+    <link href="/webapp/assets/css/docs.min.css" rel="stylesheet">
+    <link href="/webapp/assets/css/patch.css" rel="stylesheet">
+    <script src="/webapp/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script src="/webapp/lib/js/jquery-3.2.1.js"></script>
+    <script src="/webapp/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="simple-responsive-table">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="simple-form-inline">
+        <form class="form-inline">
+            <div class="form-group"><label for="exampleInputName2">Name</label> <input class="form-control"
+                                                                                       id="exampleInputName2"
+                                                                                       placeholder="Jane Doe"></div>
+            <div class="form-group"><label for="exampleInputEmail2">Email</label> <input type="email"
+                                                                                         class="form-control"
+                                                                                         id="exampleInputEmail2"
+                                                                                         placeholder="jane.doe@example.com">
+            </div>
+            <button type="submit" class="btn btn-default">Send invitation</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="simple-form-inline">
+        <form class="form-inline">
+            <div class="form-group"><label class="sr-only" for="exampleInputEmail3">Email address</label> <input
+                    type="email" class="form-control" id="exampleInputEmail3" placeholder="Email"></div>
+            <div class="form-group"><label class="sr-only" for="exampleInputPassword3">Password</label> <input
+                    type="password" class="form-control" id="exampleInputPassword3" placeholder="Password"></div>
+            <div class="checkbox"><label> <input type="checkbox"> Remember me </label></div>
+            <button type="submit" class="btn btn-default">Sign in</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="form-inline-with-input-group">
+        <form class="form-inline">
+            <div class="form-group"><label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input class="form-control" id="exampleInputAmount" placeholder="Amount">
+                    <div class="input-group-addon">.00</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Transfer cash</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="simple-horizontal-form">
+        <form class="form-horizontal">
+            <div class="form-group"><label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10"><input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group"><label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10"><input type="password" class="form-control" id="inputPassword3"
+                                              placeholder="Password"></div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox"><label> <input type="checkbox"> Remember me </label></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-callout bs-callout-danger" id="callout-input-needs-type"><h4>Type declaration required</h4>
+        <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p></div>
+    <div class="bs-callout bs-callout-info" id="callout-input-needs-type"><h4>Type declaration required</h4>
+        <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p></div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="text-form-control">
+        <form><input class="form-control" placeholder="Text input"></form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="textarea-form-control">
+        <form><textarea class="form-control" rows="3" placeholder="Textarea"></textarea></form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="block-checkboxes-radios">
+        <form>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Option one is this and that—be sure to include why it's great
+                    </input>
+                </label>
+            </div>
+            <div class="checkbox disabled">
+                <label>
+                    <input type="checkbox" value="" disabled="">
+                    Option two is disabled
+                    </input>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Option three
+                    </input>
+                </label>
+            </div>
+
+            <br>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                    Option one is this and that—be sure to include why it's great
+                    </input>
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Option two can be something else and selecting it will deselect option one
+                    </input>
+                </label>
+            </div>
+
+            <div class="radio disabled">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+                    Option three is disabled
+                    </input>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="inline-checkboxes-radios">
+        <form><label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="option1"> 1 </label>
+            <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox2" value="option2"> 2 </label>
+            <label class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox3" value="option3"> 3 </label>
+        </form>
+        <br>
+        <form><label class="radio-inline"> <input type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                                  value="option1"> 1 </label> <label class="radio-inline"> <input
+                type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2 </label> <label
+                class="radio-inline"> <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+        </label></form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-ids="select-form-control">
+        <form><select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select></form>
+    </div>
+
+    <div class="bs-example" data-example-ids="select-multiple-form-control">
+        <form><select multiple="" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select></form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="horizontal-static-form-control">
+        <form class="form-horizontal">
+            <div class="form-group"><label class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10"><p class="form-control-static">email@example.com</p></div>
+            </div>
+            <div class="form-group"><label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10"><input type="password" class="form-control" id="inputPassword"
+                                              placeholder="Password"></div>
+            </div>
+        </form>
+    </div>
+
+    <div class="bs-example" data-example-id="inline-static-form-control">
+        <form class="form-inline">
+            <div class="form-group"><label class="sr-only">Email</label>
+                <p class="form-control-static">email@example.com</p></div>
+            <div class="form-group"><label for="inputPassword2" class="sr-only">Password</label> <input type="password"
+                                                                                                        class="form-control"
+                                                                                                        id="inputPassword2"
+                                                                                                        placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Confirm identity</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example">
+        <form><input class="form-control" id="focusedInput" value="Demonstrative focus state"></form>
+        <form><input class="form-control" id="disabledInput" value="Demonstrative disabled state" disabled></form>
+        <form><input class="form-control" id="regularInput" value="Demonstrative regular state"></form>
+        <form><input class="form-control" id="readonlyInput" value="Demonstrative readonly state" readonly></form>
+    </div>
+
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="disabled-fieldset">
+        <form>
+            <fieldset disabled>
+                <div class="form-group">
+                    <label for="disabledTextInput">Disabled input</label>
+                    <input id="disabledTextInput" class="form-control" placeholder="Disabled input"></div>
+                <div class="form-group">
+                    <label for="disabledSelect">Disabled select menu</label>
+                    <select id="disabledSelect" class="form-control">
+                        <option>Disabled select</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Can't check this
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="simple-help-text">
+        <form>
+            <div class="form-group"><label for="inputHelpBlock">Input with help text</label> <input id="inputHelpBlock"
+                                                                                                    class="form-control"
+                                                                                                    aria-describedby="helpBlock">
+            </div>
+            <span class="help-block" id="helpBlock">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="form-validation-states">
+        <form>
+            <div class="form-group has-success"><label class="control-label" for="inputSuccess1">Input with
+                success</label> <input class="form-control" id="inputSuccess1" aria-describedby="helpBlock2"> <span
+                    class="help-block" id="helpBlock2">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+            </div>
+            <div class="form-group has-warning"><label class="control-label" for="inputWarning1">Input with
+                warning</label> <input class="form-control" id="inputWarning1"></div>
+            <div class="form-group has-error"><label class="control-label" for="inputError1">Input with error</label>
+                <input class="form-control" id="inputError1"></div>
+            <div class="has-success">
+                <div class="checkbox"><label> <input type="checkbox" id="checkboxSuccess" value="option1"> Checkbox with
+                    success </label></div>
+            </div>
+            <div class="has-warning">
+                <div class="checkbox"><label> <input type="checkbox" id="checkboxWarning" value="option1"> Checkbox with
+                    warning </label></div>
+            </div>
+            <div class="has-error">
+                <div class="checkbox"><label> <input type="checkbox" id="checkboxError" value="option1"> Checkbox with
+                    error </label></div>
+            </div>
+        </form>
+    </div>
+
+    <div class="bs-example" data-example-id="form-validation-states-with-icons">
+        <form>
+            <div class="form-group has-success has-feedback"><label class="control-label" for="inputSuccess2">Input with
+                success</label> <input class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                        class="sr-only" id="inputSuccess2Status">(success)</span></div>
+            <div class="form-group has-warning has-feedback"><label class="control-label" for="inputWarning2">Input with
+                warning</label> <input class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span> <span
+                        class="sr-only" id="inputWarning2Status">(warning)</span></div>
+            <div class="form-group has-error has-feedback"><label class="control-label" for="inputError2">Input with
+                error</label> <input class="form-control" id="inputError2" aria-describedby="inputError2Status"> <span
+                    class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span> <span
+                    class="sr-only" id="inputError2Status">(error)</span></div>
+            <div class="form-group has-success has-feedback"><label class="control-label" for="inputGroupSuccess1">Input
+                group with success</label>
+                <div class="input-group"><span class="input-group-addon">@</span> <input class="form-control"
+                                                                                         id="inputGroupSuccess1"
+                                                                                         aria-describedby="inputGroupSuccess1Status">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                        class="sr-only" id="inputGroupSuccess1Status">(success)</span></div>
+        </form>
+    </div>
+
+    <div class="bs-example" data-example-id="horizontal-form-validation-state-with-icon">
+        <form class="form-horizontal">
+            <div class="form-group has-success has-feedback"><label class="control-label col-sm-3" for="inputSuccess3">Input
+                with success</label>
+                <div class="col-sm-9"><input class="form-control" id="inputSuccess3"
+                                             aria-describedby="inputSuccess3Status"> <span
+                        class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                        class="sr-only" id="inputSuccess3Status">(success)</span></div>
+            </div>
+            <div class="form-group has-success has-feedback"><label class="control-label col-sm-3"
+                                                                    for="inputGroupSuccess2">Input group with
+                success</label>
+                <div class="col-sm-9">
+                    <div class="input-group"><span class="input-group-addon">@</span> <input class="form-control"
+                                                                                             id="inputGroupSuccess2"
+                                                                                             aria-describedby="inputGroupSuccess2Status">
+                    </div>
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                        class="sr-only" id="inputGroupSuccess2Status">(success)</span></div>
+            </div>
+        </form>
+    </div>
+
+    <div class="bs-example" data-example-id="inline-form-validation-state-with-icon">
+        <form class="form-inline">
+            <div class="form-group has-success has-feedback"><label class="control-label" for="inputSuccess4">Input with
+                success</label> <input class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                        class="sr-only" id="inputSuccess4Status">(success)</span></div>
+        </form>
+        <br>
+        <form class="form-inline">
+            <div class="form-group has-success has-feedback"><label class="control-label" for="inputGroupSuccess3">Input
+                group with success</label>
+                <div class="input-group"><span class="input-group-addon">@</span> <input class="form-control"
+                                                                                         id="inputGroupSuccess3"
+                                                                                         aria-describedby="inputGroupSuccess3Status">
+                </div>
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span
+                        class="sr-only" id="inputGroupSuccess3Status">(success)</span></div>
+        </form>
+    </div>
+
+    <div class="bs-example" data-example-id="form-validation-state-with-icon-without-label">
+        <div class="form-group has-success has-feedback"><label class="sr-only control-label" for="inputSuccess5">Hidden
+            label</label> <input class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status"> <span
+                class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span class="sr-only"
+                                                                                                      id="inputSuccess5Status">(success)</span>
+        </div>
+        <div class="form-group has-success has-feedback"><label class="sr-only control-label" for="inputGroupSuccess4">Input
+            group with success</label>
+            <div class="input-group"><span class="input-group-addon">@</span> <input class="form-control"
+                                                                                     id="inputGroupSuccess4"
+                                                                                     aria-describedby="inputGroupSuccess4Status">
+            </div>
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span> <span class="sr-only"
+                                                                                                        id="inputGroupSuccess4Status">(success)</span>
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example bs-example-control-sizing" data-example-id="form-control-height-sizes">
+        <form>
+            <div class="controls"><input class="form-control input-lg" placeholder=".input-lg"> <input
+                    class="form-control" placeholder="Default input"> <input class="form-control input-sm"
+                                                                             placeholder=".input-sm"> <select
+                    class="form-control input-lg">
+                <option value="">.input-lg</option>
+            </select> <select class="form-control">
+                <option value="">Default select</option>
+            </select> <select class="form-control input-sm">
+                <option value="">.input-sm</option>
+            </select></div>
+        </form>
+    </div>
+
+    <div class="bs-example" data-example-id="form-group-height-sizes">
+        <form class="form-horizontal">
+            <div class="form-group form-group-lg"><label class="col-sm-2 control-label" for="formGroupInputLarge">Large
+                label</label>
+                <div class="col-sm-10"><input class="form-control" id="formGroupInputLarge" placeholder="Large input">
+                </div>
+            </div>
+            <div class="form-group form-group-sm"><label class="col-sm-2 control-label" for="formGroupInputSmall">Small
+                label</label>
+                <div class="col-sm-10"><input class="form-control" id="formGroupInputSmall" placeholder="Small input">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="bs-example" data-example-id="form-control-column-sizing">
+        <form>
+            <div class="row">
+                <div class="col-xs-2"><input class="form-control" placeholder=".col-xs-2"></div>
+                <div class="col-xs-3"><input class="form-control" placeholder=".col-xs-3"></div>
+                <div class="col-xs-4"><input class="form-control" placeholder=".col-xs-4"></div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="row responsive-utilities-test visible-on">
+        <div class="col-xs-6 col-sm-3"><span class="hidden-xs">Extra small</span> <span class="visible-xs-block">✔ Visible on x-small</span>
+        </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-sm">Small</span> <span class="visible-sm-block">✔ Visible on small</span>
+        </div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-md">Medium</span> <span class="visible-md-block">✔ Visible on medium</span>
+        </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-lg">Large</span> <span class="visible-lg-block">✔ Visible on large</span>
+        </div>
+    </div>
+    <div class="row responsive-utilities-test visible-on">
+        <div class="col-xs-6"><span class="hidden-xs hidden-sm">Extra small and small</span> <span
+                class="visible-xs-block visible-sm-block">✔ Visible on x-small and small</span></div>
+        <div class="col-xs-6"><span class="hidden-md hidden-lg">Medium and large</span> <span
+                class="visible-md-block visible-lg-block">✔ Visible on medium and large</span></div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6"><span class="hidden-xs hidden-md">Extra small and medium</span> <span
+                class="visible-xs-block visible-md-block">✔ Visible on x-small and medium</span></div>
+        <div class="col-xs-6"><span class="hidden-sm hidden-lg">Small and large</span> <span
+                class="visible-sm-block visible-lg-block">✔ Visible on small and large</span></div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6"><span class="hidden-xs hidden-lg">Extra small and large</span> <span
+                class="visible-xs-block visible-lg-block">✔ Visible on x-small and large</span></div>
+        <div class="col-xs-6"><span class="hidden-sm hidden-md">Small and medium</span> <span
+                class="visible-sm-block visible-md-block">✔ Visible on small and medium</span></div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="row responsive-utilities-test hidden-on">
+        <div class="col-xs-6 col-sm-3"><span class="hidden-xs">Extra small</span> <span class="visible-xs-block">✔ Hidden on x-small</span>
+        </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-sm">Small</span> <span class="visible-sm-block">✔ Hidden on small</span>
+        </div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-md">Medium</span> <span class="visible-md-block">✔ Hidden on medium</span>
+        </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-lg">Large</span> <span class="visible-lg-block">✔ Hidden on large</span>
+        </div>
+    </div>
+    <div class="row responsive-utilities-test hidden-on">
+        <div class="col-xs-6"><span class="hidden-xs hidden-sm">Extra small and small</span> <span
+                class="visible-xs-block visible-sm-block">✔ Hidden on x-small and small</span></div>
+        <div class="col-xs-6"><span class="hidden-md hidden-lg">Medium and large</span> <span
+                class="visible-md-block visible-lg-block">✔ Hidden on medium and large</span></div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6"><span class="hidden-xs hidden-md">Extra small and medium</span> <span
+                class="visible-xs-block visible-md-block">✔ Hidden on x-small and medium</span></div>
+        <div class="col-xs-6"><span class="hidden-sm hidden-lg">Small and large</span> <span
+                class="visible-sm-block visible-lg-block">✔ Hidden on small and large</span></div>
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6"><span class="hidden-xs hidden-lg">Extra small and large</span> <span
+                class="visible-xs-block visible-lg-block">✔ Hidden on x-small and large</span></div>
+        <div class="col-xs-6"><span class="hidden-sm hidden-md">Small and medium</span> <span
+                class="visible-sm-block visible-md-block">✔ Hidden on small and medium</span></div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example">
+        <div class="color-swatches">
+            <div class="color-swatch gray-darker"></div>
+            <div class="color-swatch gray-dark"></div>
+            <div class="color-swatch gray"></div>
+            <div class="color-swatch gray-light"></div>
+            <div class="color-swatch gray-lighter"></div>
+        </div>
+    </div>
+
+    <div class="bs-example">
+        <div class="color-swatches">
+            <div class="color-swatch brand-primary"></div>
+            <div class="color-swatch brand-success"></div>
+            <div class="color-swatch brand-info"></div>
+            <div class="color-swatch brand-warning"></div>
+            <div class="color-swatch brand-danger"></div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+</div>
+<br>
+<br><br><br><br><br>
+</body>
+</html>

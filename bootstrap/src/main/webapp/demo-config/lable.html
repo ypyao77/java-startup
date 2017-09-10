@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bootstrap Demo</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.7-dist/css/bootstrap-responsive.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/webapp/bootstrap-config/css/bootstrap.min.css">
+    <link href="/webapp/bootstrap-config/css/bootstrap-theme.min.css"
+          data-href="/webapp/bootstrap-config/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+    <script src="/webapp/lib/js/jquery-3.2.1.js"></script>
+    <script src="/webapp/bootstrap-config/js/bootstrap.js"></script>
+</head>
+
+
+<body>
+
+<br>
+<div style="margin-left:10%; margin-right:10%;">
+    <h3>Example heading <span class="label label-default">New</span></h3>
+</div>
+
+<br>
+<div style="margin-left:10%; margin-right:10%;">
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+    </ul>
+</div>
+<br>
+
+<div class="jumbotron" style="margin-left:10%; margin-right:10%;">
+    <h1>Hello, world!</h1>
+    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+<br>
+
+<div class="page-header" style="margin-left:10%; margin-right:10%;">
+    <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="alert alert-success" role="alert"><strong>Well done! </strong>You successfully read this important alert message.</div>
+    <div class="alert alert-info" role="alert"><strong>Heads up! </strong>This alert needs your attention, but it's not super important.</div>
+    <div class="alert alert-warning" role="alert"><strong>Warning! </strong>Better check yourself, you're not looking too good.</div>
+    <div class="alert alert-danger" role="alert"><strong>Oh snap! </strong>Change a few things up and try submitting again.</div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;" class="bs-example" data-example-id="alerts-with-links">
+    <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+    </div>
+    <div class="alert alert-info" role="alert">
+        <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+            <span class="sr-only">60% Complete</span>
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%;">
+            60%
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+            0%
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
+            2%
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+            <span class="sr-only">40% Complete (success)</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+            <span class="sr-only">20% Complete</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+            <span class="sr-only">60% Complete (warning)</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            <span class="sr-only">80% Complete (danger)</span>
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+            <span class="sr-only">40% Complete (success)</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+            <span class="sr-only">20% Complete</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+            <span class="sr-only">60% Complete (warning)</span>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            <span class="sr-only">80% Complete (danger)</span>
+        </div>
+    </div>
+</div>
+<br>
+
+
+<div style="margin-left:10%; margin-right:10%;">
+    <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <ul class="list-group">
+        <li class="list-group-item"><span class="badge">14</span>Cras justo odio</li>
+        <li class="list-group-item"><span class="badge">33</span>Dapibus ac facilisis in</li>
+        <li class="list-group-item"><span class="badge">20</span>Morbi leo risus</li>
+        <li class="list-group-item"><span class="badge">0</span>Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="list-group">
+        <a href="#" class="list-group-item">Cras justo odio</a>
+        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item active">Morbi leo risus</a>
+        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item">Vestibulum at eros</a>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="list-group">
+        <button type="button" class="list-group-item">Cras justo odio</button>
+        <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+        <button type="button" class="list-group-item">Morbi leo risus</button>
+        <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+        <button type="button" class="list-group-item">Vestibulum at eros</button>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="list-group">
+        <a href="#" class="list-group-item disabled">Cras justo odio</a>
+        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item">Morbi leo risus</a>
+        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item">Vestibulum at eros</a>
+    </div>
+</div>
+<br>
+
+<div class="bs-example" data-example-id="list-group-variants" style="margin-left:10%; margin-right:10%;">
+    <div class="row">
+        <div class="col-sm-6">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+                <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+                <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+                <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+                <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="bs-example" data-example-id="list-group-custom-content" style="margin-left:10%; margin-right:10%;">
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+        </a>
+    </div>
+</div>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body">
+            Panel content
+        </div>
+        <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Panel content
+        </div>
+        <div class="panel-footer">Panel footer</div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="contextual-panels">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="bs-example" data-example-id="table-within-panel">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">
+                <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Panel heading</div>
+        <div class="panel-body">
+            <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+
+        <!-- List group -->
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="well">Look, I'm in a well!</div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="well well-lg">Look, I'm in a well!</div>
+</div>
+<br>
+
+<div style="margin-left:10%; margin-right:10%;">
+    <div class="well well-sm">Look, I'm in a well!</div>
+</div>
+<br>
+
+<br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bootstrap Demo</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.7-dist/css/bootstrap-responsive.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/webapp/bootstrap-config/css/bootstrap.min.css">
+    <link href="/webapp/bootstrap-config/css/bootstrap-theme.min.css"
+          data-href="/webapp/bootstrap-config/css/bootstrap-theme.min.css" rel="stylesheet" id="bs-theme-stylesheet">
+
+    <script src="/webapp/lib/js/jquery-3.2.1.js"></script>
+    <script src="/webapp/bootstrap-config/js/bootstrap.js"></script>
+</head>
+
+
+<body>
+
+<div>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-addon">.00</span>
+    </div>
+
+    <label for="basic-url">Your vanity URL</label>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+</div>
+<br>
+
+<div>
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+    </div>
+
+    <div class="input-group input-group-sm">
+        <span class="input-group-addon" id="sizing-addon3">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+    </div>
+</div>
+<br>
+
+<div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+                <input type="text" class="form-control" aria-label="...">
+            </div><!-- /input-group -->
+
+            <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+                <input type="text" class="form-control" aria-label="...">
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+
+        <div class="col-lg-6">
+            <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+                <input type="text" class="form-control" aria-label="...">
+
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+                <input type="text" class="form-control" aria-label="...">
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+</div>
+<br>
+
+<div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+                <input type="text" class="form-control" placeholder="Search for...">
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+</div>
+<br>
+
+<div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+                <input type="text" class="form-control" aria-label="...">
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="...">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+</div>
+<br>
+
+<form class="bs-example bs-example-form" data-example-id="input-group-segmented-buttons">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">Action</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+            </div><!-- /.input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">Action</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div><!-- /.input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+</form>
+<br>
+
+<form class="bs-example bs-example-form" data-example-id="input-group-multiple-buttons">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default" aria-label="Bold"><span class="glyphicon glyphicon-bold"></span></button>
+                    <button type="button" class="btn btn-default" aria-label="Italic"><span class="glyphicon glyphicon-italic"></span></button>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with multiple buttons">
+            </div><!-- /.input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with multiple buttons">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default" aria-label="Help"><span class="glyphicon glyphicon-question-sign"></span></button>
+                    <button type="button" class="btn btn-default">Action</button>
+                </div>
+            </div><!-- /.input-group -->
+        </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>
