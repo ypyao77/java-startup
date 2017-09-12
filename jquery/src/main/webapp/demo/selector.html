@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script src="../lib/js/jquery-3.2.1.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                if ($("p").is(":hidden")) {
+                    $("p").show();
+                } else {
+                    $("p").hide();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+<h2>这是一个标题</h2>
+<button>点我</button>
+<p>这是一个段落。</p>
+<p>这是另一个段落。</p>
+</body>
+</html>

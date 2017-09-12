@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script src="../lib/js/jquery-3.2.1.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#button1").click(function(){
+                $("#diva1").fadeIn();
+                $("#diva2").fadeIn("slow");
+                $("#diva3").fadeIn(3000);
+            });
+            $("#button2").click(function(){
+                $("#divb1").fadeToggle();
+                $("#divb2").fadeToggle("slow");
+                $("#divb3").fadeToggle(3000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<body>
+<div>
+    <p>以下实例演示了 fadeToggle() 使用了不同参数的效果。</p>
+    <button id="button1">点击淡入 div 元素。</button>
+    <br><br>
+    <div id="diva1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="diva2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="diva3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+</div>
+
+<div>
+    <p>以下实例演示了 fadeIn() 使用了不同参数的效果。</p>
+    <button id="button2">点击淡入 div 元素。</button>
+    <br><br>
+    <div id="divb1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="divb2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="divb3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+</div>
+
+</body>
+</html>

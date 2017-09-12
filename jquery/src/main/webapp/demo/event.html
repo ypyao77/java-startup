@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script src="../lib/js/jquery-3.2.1.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                if ($("#test").is(":hidden")) {
+                    $("#test").show();
+                } else {
+                    $("#test").hide();
+                }
+            });
+
+            $("#test").mouseenter(function(){
+                $("#test2").text('您的鼠标移到了 id="p1" 的元素上!');
+            });
+            $("#test").mouseleave(function(){
+                $("#test2").text("再见，您的鼠标离开了该段落。");
+            });
+            $("#test").mousedown(function(){
+                $("#test3").text("鼠标在该段落上按下！");
+            });
+            $("#test").mouseup(function(){
+                $("#test3").text("鼠标在段落上松开。");
+            });
+        });
+    </script>
+</head>
+
+<body>
+<h2>这是一个标题</h2>
+<button>点我</button>
+<p id="test2">这是一个段落</p>
+<p id="test3">这是一个段落</p>
+<p id="test">这是另外一个段落</p>
+</body>
+
+</html>
