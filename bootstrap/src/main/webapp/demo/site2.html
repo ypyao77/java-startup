@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bootstrap Demo</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.7-dist/css/bootstrap-responsive.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"
+          data-href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet"
+          id="bs-theme-stylesheet">
+
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/css/patch.css" rel="stylesheet">
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script src="../lib/js/jquery-3.2.1.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">2013</a></li>
+                <li class="active">十一月</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="alert alert-warning">
+                <a href="#" class="close" data-dismiss="alert">
+                    &times; </a>
+                <strong>警告！</strong>您的网络连接有问题。
+            </div>
+            <div class="alert alert-info">
+                <a href="#" class="close" data-dismiss="alert">
+                    &times; </a>
+                <strong>警告！</strong>您的网络连接有问题。
+            </div>
+            <div class="alert alert-danger">
+                <a href="#" class="close" data-dismiss="alert">
+                    &times; </a>
+                <strong>警告！</strong>您的网络连接有问题。
+            </div>
+            <div class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert">
+                    &times; </a>
+                <strong>警告！</strong>您的网络连接有问题。
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active"><a href="#section-1">第一部分</a></li>
+                <li><a href="#section-2">第二部分</a></li>
+                <li><a href="#section-3">第三部分</a></li>
+                <li><a href="#section-4">第四部分</a></li>
+                <li><a href="#section-5">第五部分</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <div>
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">
+                        W3Cschool Home</a>
+                    </li>
+                    <li><a href="#ios" data-toggle="tab">iOS</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+                           data-toggle="dropdown">Java <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">
+                                jmeter</a>
+                            </li>
+                            <li><a href="#ejb" tabindex="-1" data-toggle="tab">
+                                ejb</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div>In IE when i click the close-button it sends me to the root of the directoy the site is in.</div>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+                        <h2>模态框（Modal）插件方法</h2><!-- 按钮触发模态框 -->
+                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            开始演示模态框
+                        </button><!-- 模态框（Modal） -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">×
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            模态框（Modal）标题 </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        按下 ESC 按钮退出。
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">关闭
+                                        </button>
+                                        <button type="button" class="btn btn-primary">
+                                            提交更改
+                                        </button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    </div>
+                    <div class="tab-pane fade" id="ios">
+                        <h4>提示工具（Tooltip）插件 - 锚</h4>这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip"
+                                                            title="默认的 Tooltip">
+                        默认的 Tooltip</a>.
+                        这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip"
+                                data-placement="left" title="左侧的 Tooltip">
+                        左侧的 Tooltip</a>.
+                        这是一个 <a href="#" data-toggle="tooltip" data-placement="top"
+                                title="顶部的 Tooltip">
+                        顶部的 Tooltip</a>.
+                        这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                title="底部的 Tooltip">
+                        底部的 Tooltip</a>.
+                        这是一个 <a href="#" data-toggle="tooltip" data-placement="right"
+                                title="右侧的 Tooltip">
+                        右侧的 Tooltip</a><br><h4>提示工具（Tooltip）插件 - 按钮</h4>
+                        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                title="默认的 Tooltip">
+                            默认的 Tooltip
+                        </button>
+                        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                data-placement="left" title="左侧的 Tooltip">
+                            左侧的 Tooltip
+                        </button>
+                        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                data-placement="top" title="顶部的 Tooltip">
+                            顶部的 Tooltip
+                        </button>
+                        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                data-placement="bottom" title="底部的 Tooltip">
+                            底部的 Tooltip
+                        </button>
+                        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                                data-placement="right" title="右侧的 Tooltip">
+                            右侧的 Tooltip
+                        </button>
+                    </div>
+                    <div class="tab-pane fade" id="jmeter">
+                        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+                    </div>
+                    <div class="tab-pane fade" id="ejb">
+                        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE
+                            上。 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                        <th>Table heading</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseOne">
+                                点击我进行展开，再次点击我进行折叠。第 1 部分 </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseTwo">
+                                点击我进行展开，再次点击我进行折叠。第 2 部分 </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Craft beer labore wes anderson
+                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseThree">
+                                点击我进行展开，再次点击我进行折叠。第 3 部分 </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Ad vegan excepteur butcher vice lomo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

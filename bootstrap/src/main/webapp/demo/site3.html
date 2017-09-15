@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Bootstrap Demo</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.7-dist/css/bootstrap-responsive.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"
+          data-href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet"
+          id="bs-theme-stylesheet">
+
+    <link href="../assets/css/docs.min.css" rel="stylesheet">
+    <link href="../assets/css/patch.css" rel="stylesheet">
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script src="../lib/js/jquery-3.2.1.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">2013</a></li>
+                <li class="active">十一月</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div>
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#home" data-toggle="tab">W3Cschool Home</a>
+                    </li>
+                    <li>
+                        <a href="#ios" data-toggle="tab">iOS</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+                           data-toggle="dropdown">Java <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">
+                                jmeter</a>
+                            </li>
+                            <li><a href="#ejb" tabindex="-1" data-toggle="tab">
+                                ejb</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+                        <div class="bs-example" data-example-id="simple-responsive-table">
+                            <h2>Responsive Embed</h2>
+                            <p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect
+                                ratio</p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="emb/page1.html"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ios">
+                        <div class="bs-example" data-example-id="simple-responsive-table">
+                            <h2>Responsive Embed</h2>
+                            <p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect
+                                ratio</p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="emb/page2.html"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="jmeter">
+                        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+                    </div>
+                    <div class="tab-pane fade" id="ejb">
+                        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
