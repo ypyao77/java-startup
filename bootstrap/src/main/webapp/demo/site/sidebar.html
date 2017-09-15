@@ -11,10 +11,10 @@
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
 
-    <link href="../../assets/css/docs.min.css" rel="stylesheet">
-    <link href="../../assets/css/patch.css" rel="stylesheet">
+    <!-- <link href="../../assets/css/docs.min.css" rel="stylesheet"> -->
+    <!-- <link href="../../assets/css/patch.css" rel="stylesheet"> -->
 
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
 
     <script src="../../lib/js/jquery-3.2.1.js"></script>
     <script src="../../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
@@ -30,22 +30,31 @@
 
 <script>
     $(document).ready(function(){
-        $(".nav a").on("click", function(){
-            $(".nav").find(".active").removeClass("active");
+        $("#main-nav a").on("click", function(){
+            $("#main-nav").find(".active").removeClass("active");
             $(this).parent().addClass("active");
 
             var myUrl = $(this).data("dest");
             $("#myContent").load(myUrl);
         });
 
-        // $("#main-nav li:first a").click();
+        $("#main-nav li:first a").click();
+
+        $("#left-nav a").on("click", function(){
+            $("#left-nav").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+
+            var myUrl = $(this).data("dest");
+            $("#myContent").load(myUrl);
+        });
+        $("#left-nav li:first a").click();
     });
 </script>
 
-<div class="container">
-    <div class="row">
+<div class="container-fluid">
+    <div class="row-fluid">
         <div class="col-xs-12">
-            <nav class="navbar navbar-inverse" role="navigation">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="javascript:void(0);">菜鸟教程</a>
@@ -53,27 +62,45 @@
                     <div id="main-nav" class="collapse navbar-collapse" id="example-navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="javascript:void(0);" data-dest="p1.html">导航1</a></li>
-                            <li class="active"><a href="javascript:void(0);" data-dest="p2.html">导航2</a></li>
+                            <li><a href="javascript:void(0);" data-dest="p2.html">导航2</a></li>
                             <li><a href="javascript:void(0);" data-dest="p3.html">导航3</a></li>
                             <li><a href="javascript:void(0);" data-dest="p4.html">导航4</a></li>
-                            <!--
-                            <li><a href="javascript:void(0);" onclick="direct2('p1.html')">导航1</a></li>
-                            <li><a href="javascript:void(0);" onclick="direct2('p2.html')">导航2</a></li>
-                            <li><a href="javascript:void(0);" onclick="direct2('p3.html')">导航3</a></li>
-                            <li><a href="javascript:void(0);" onclick="direct2('p4.html')">导航4</a></li>
-                            -->
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
+    <div class="row"><br><br><br></div>
 
-    <div class="row">
-        <div class="col-xs-12">
+
+    <div class="row-fluid">
+        <div class="col-xs-2 bs-docs-sidebar">
+            <div id="left-nav" class="well">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="nav-header">列表头1</li>
+                    <li class="active"><a href="javascript:void(0);" data-dest="p1.html">导航1</a></li>
+                    <li><a href="javascript:void(0);" data-dest="p2.html">导航2</a></li>
+                    <li class="nav-header">列表头2</li>
+                    <li><a href="javascript:void(0);" data-dest="p3.html">导航3</a></li>
+                    <li><a href="javascript:void(0);" data-dest="p4.html">导航4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xs-10">
             <div id="myContent" />
         </div>
     </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-xs-12">
+    <hr>
+    <footer>
+        <p>© Company 2013</p>
+    </footer>
 </div>
 
 </body>
