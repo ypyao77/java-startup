@@ -10,8 +10,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>restp</module>
-        <module>restc</module>
+        <module>webapp</module>
+        <module>webclient</module>
+        <module>schedule</module>
+        <module>upload</module>
+        <module>webmvc</module>
     </modules>
 
     <properties>
