@@ -16,6 +16,8 @@
         <module>upload</module>
         <module>webmvc</module>
         <module>prop</module>
+        <module>gemfile</module>
+        <module>async</module>
     </modules>
 
     <properties>
