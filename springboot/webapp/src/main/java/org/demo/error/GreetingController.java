@@ -1,4 +1,4 @@
-package org.demo.webapp;
+package org.demo.error;
 
 import java.util.concurrent.atomic.AtomicLong;
 

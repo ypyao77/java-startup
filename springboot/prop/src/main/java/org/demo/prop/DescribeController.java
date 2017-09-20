@@ -13,5 +13,4 @@ public class DescribeController {
         model.addAttribute("name", name);
         return "describe";
     }
-
 }

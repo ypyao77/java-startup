@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="zxy.demo.springboot.boot_feature.dao.UserMapper" >
-  <resultMap id="BaseResultMap" type="zxy.demo.springboot.boot_feature.entity.User" >
+<mapper namespace="org.demo.feature.dao.UserMapper" >
+  <resultMap id="BaseResultMap" type="org.demo.feature.entity.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="birthday" property="birthday" jdbcType="DATE" />
@@ -68,7 +68,7 @@
   <sql id="Base_Column_List" >
     id, name, birthday, address
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="zxy.demo.springboot.boot_feature.entity.UserExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="org.demo.feature.entity.UserExample" >
     select
     <if test="distinct" >
       distinct
@@ -92,13 +92,13 @@
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="zxy.demo.springboot.boot_feature.entity.UserExample" >
+  <delete id="deleteByExample" parameterType="org.demo.feature.entity.UserExample" >
     delete from user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="zxy.demo.springboot.boot_feature.entity.User" >
+  <insert id="insert" parameterType="org.demo.feature.entity.User" >
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -107,7 +107,7 @@
     values (#{name,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE}, #{address,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="zxy.demo.springboot.boot_feature.entity.User" >
+  <insert id="insertSelective" parameterType="org.demo.feature.entity.User" >
     <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -135,7 +135,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="zxy.demo.springboot.boot_feature.entity.UserExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="org.demo.feature.entity.UserExample" resultType="java.lang.Integer" >
     select count(*) from user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -171,7 +171,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="zxy.demo.springboot.boot_feature.entity.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="org.demo.feature.entity.User" >
     update user
     <set >
       <if test="name != null" >
@@ -186,14 +186,14 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="zxy.demo.springboot.boot_feature.entity.User" >
+  <update id="updateByPrimaryKey" parameterType="org.demo.feature.entity.User" >
     update user
     set name = #{name,jdbcType=VARCHAR},
       birthday = #{birthday,jdbcType=DATE},
       address = #{address,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <select resultMap="BaseResultMap" parameterType="zxy.demo.springboot.boot_feature.entity.UserExample" id="selectByExampleWithRowbounds" >
+  <select resultMap="BaseResultMap" parameterType="org.demo.feature.entity.UserExample" id="selectByExampleWithRowbounds" >
     select
     <if test="distinct" >
       distinct

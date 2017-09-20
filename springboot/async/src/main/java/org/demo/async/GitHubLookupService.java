@@ -29,5 +29,4 @@ public class GitHubLookupService {
         Thread.sleep(1000L);
         return CompletableFuture.completedFuture(results);
     }
-
 }

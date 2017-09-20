@@ -1,4 +1,4 @@
-package zxy.demo.springboot.boot_feature;
+package org.demo.feature;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.*;
@@ -6,12 +6,11 @@ import org.springframework.boot.autoconfigure.*;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 // MyBatis 支持
-@MapperScan("zxy.demo.springboot.boot_feature.dao")
+@MapperScan("org.demo.feature.dao")
 // filter 支持
-@ServletComponentScan(basePackages="zxy.demo.springboot.boot_feature.web")
+@ServletComponentScan(basePackages="org.demo.feature.web")
 @SpringBootApplication
 public class MainApplicion {
-
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(MainApplicion.class, args);
 	}

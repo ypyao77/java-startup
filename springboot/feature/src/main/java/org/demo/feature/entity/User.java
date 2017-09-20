@@ -1,4 +1,4 @@
-package zxy.demo.springboot.boot_feature.entity;
+package org.demo.feature.entity;
 
 import java.util.Date;
 

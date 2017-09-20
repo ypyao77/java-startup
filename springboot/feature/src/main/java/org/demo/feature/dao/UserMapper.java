@@ -1,10 +1,10 @@
-package zxy.demo.springboot.boot_feature.dao;
+package org.demo.feature.dao;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;
-import zxy.demo.springboot.boot_feature.entity.User;
-import zxy.demo.springboot.boot_feature.entity.UserExample;
+import org.demo.feature.entity.User;
+import org.demo.feature.entity.UserExample;
 
 public interface UserMapper {
     int countByExample(UserExample example);
