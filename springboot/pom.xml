@@ -21,6 +21,7 @@
         <module>feature</module>
         <module>error</module>
         <module>error2</module>
+        <module>swagger2</module>
     </modules>
 
     <properties>
