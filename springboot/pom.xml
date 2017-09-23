@@ -25,6 +25,8 @@
         <module>swagger2</module>
         <module>security</module>
         <module>log4j</module>
+        <module>actuator</module>
+        <module>actuator2</module>
     </modules>
 
     <properties>

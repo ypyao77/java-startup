@@ -1,4 +1,4 @@
-package org.demo.error;
+package org.demo.webapp;
 
 public class Greeting {
 

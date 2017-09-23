@@ -1,4 +1,4 @@
-package org.demo.error;
+package org.demo.actuator;
 
 import java.util.concurrent.atomic.AtomicLong;
 
