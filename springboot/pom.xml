@@ -18,11 +18,13 @@
         <module>prop</module>
         <module>gemfile</module>
         <module>async</module>
+        <module>async2</module>
         <module>feature</module>
         <module>error</module>
         <module>error2</module>
         <module>swagger2</module>
         <module>security</module>
+        <module>log4j</module>
     </modules>
 
     <properties>
