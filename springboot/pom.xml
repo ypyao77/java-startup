@@ -19,6 +19,7 @@
         <module>gemfile</module>
         <module>async</module>
         <module>async2</module>
+        <module>async3</module>
         <module>feature</module>
         <module>error</module>
         <module>error2</module>
