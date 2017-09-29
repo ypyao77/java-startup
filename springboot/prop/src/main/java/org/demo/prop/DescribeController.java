@@ -9,6 +9,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.async.DeferredResult;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.util.UriComponents;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -27,6 +29,11 @@ public class DescribeController {
     @RequestMapping("/say")
     @ResponseBody
     public String say(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
+        UriComponents uriComponents = UriComponentsBuilder.newInstance()
+                .scheme("http").host("example.com").path("/hotels/{hotel}/bookings/{booking}").build()
+                .expand("42", "21")
+                .encode();
+
         model.addAttribute("name", name);
         return "saySomething";
     }
