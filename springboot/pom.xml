@@ -28,6 +28,7 @@
         <module>log4j</module>
         <module>actuator</module>
         <module>actuator2</module>
+        <module>layout</module>
     </modules>
 
     <properties>
