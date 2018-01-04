@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: demo-app
+  cloud:
+    zookeeper:
+      connect-string: 10.202.249.175:2181,10.202.249.176:2181,10.202.249.177:2181
+      discovery:
+        enabled: true
+        register: false

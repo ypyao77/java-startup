@@ -13,6 +13,10 @@
         <module>eurekaservice</module>
         <module>produce</module>
         <module>consume</module>
+        <module>zks</module>
+        <module>zkc</module>
+        <module>zkproduce</module>
+        <module>zkconsume</module>
     </modules>
 
     <properties>
