@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: ${PORT:1111}
+
+eureka:
+  instance:
+    hostname: peer1
+
+  client:
+    #registerWithEureka: false
+    #fetchRegistry: false
+    #server:
+    #  waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+      defaultZone: http://peer2:1112/eureka/
