@@ -7,12 +7,12 @@ server:
 
 eureka:
   instance:
-    hostname: peer1
+    hostname: master
 
   client:
-    #registerWithEureka: false
-    #fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     #server:
     #  waitTimeInMsWhenSyncEmpty: 0
     serviceUrl:
-      defaultZone: http://peer2:1112/eureka/
+      defaultZone: http://backup:1112/eureka/

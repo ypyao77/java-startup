@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>eurekaservice</module>
+        <module>eureka-service</module>
         <module>produce</module>
         <module>consume</module>
     </modules>
