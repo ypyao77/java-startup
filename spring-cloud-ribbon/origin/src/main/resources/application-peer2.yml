@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: hello-ribbon2
+
+server:
+  port: 8002
+

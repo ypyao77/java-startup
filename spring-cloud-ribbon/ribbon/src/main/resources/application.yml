@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ribbon-client
+
+server:
+  port: 8008
+
+hello-ribbon:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: master:8001,master:8002
+    ServerListRefreshInterval: 15000
+
