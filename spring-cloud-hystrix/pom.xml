@@ -49,6 +49,7 @@
     <modules>
         <module>origin</module>
         <module>hystrix</module>
+        <module>ribbon</module>
     </modules>
 
 </project>

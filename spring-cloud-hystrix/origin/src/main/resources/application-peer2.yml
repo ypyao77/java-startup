@@ -1,7 +1,7 @@
 spring:
   application:
-    name: hello-hystrix2
+    name: hello-ribbon2
 
 server:
-  port: 8091
+  port: 8092
 
