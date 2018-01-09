@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: hello-hystrix1
+
+server:
+  port: 8090
+
+
