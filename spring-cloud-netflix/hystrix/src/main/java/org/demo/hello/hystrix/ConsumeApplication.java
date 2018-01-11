@@ -1,4 +1,4 @@
-package org.demo.hello.consume;
+package org.demo.hello.hystrix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -23,6 +23,7 @@
         <module>ribbon</module>
         <module>hystrix</module>
         <module>feign</module>
+        <module>zuul</module>
     </modules>
 
     <properties>

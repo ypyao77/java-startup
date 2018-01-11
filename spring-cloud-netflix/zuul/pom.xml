@@ -9,7 +9,7 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>consume</artifactId>
+	<artifactId>zuul</artifactId>
 	<packaging>jar</packaging>
 
 	<dependencies>
@@ -23,7 +23,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-feign</artifactId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
 	</dependencies>
 </project>

@@ -1,4 +1,4 @@
-package org.demo.hello.consume.controller;
+package org.demo.hello.hystrix;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +18,8 @@ public class ConsumeController {
     @Value("${producer.service.name}")
     private String producerServiceName;
 
-    @RequestMapping(value = "/consumer", method = RequestMethod.GET)
-    public String consumer() {
+    @RequestMapping(value = "/query", method = RequestMethod.GET)
+    public String query() {
         return restTemplate.getForEntity("http://" + this.producerServiceName + "/hello", String.class).getBody();
     }
 }

@@ -1,0 +1,25 @@
+server.port: 5000
+
+spring.application.name: hello-zuul-service
+
+zuul:
+  ignored-services: "*"
+  routes:
+    api-hello-produce: # mapping bases on url
+      path: /acall/**
+      url: http://master:2220/
+    api-hello-zuul-produce: # mapping based on service id
+      path: /bcall/**
+      serviceId: hello-produce-service
+    hello-produce-service: # mapping based on service id, named by service id
+      path: /ccall/**
+
+eureka:
+  instance:
+    hostname: master
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+  client:
+    healthcheck.enabled: true
+    serviceUrl.defaultZone: http://master:1110/eureka/

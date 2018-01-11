@@ -1,4 +1,4 @@
-package org.demo.hello.consume;
+package org.demo.hello.ribbon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

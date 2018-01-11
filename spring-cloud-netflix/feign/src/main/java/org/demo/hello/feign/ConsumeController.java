@@ -1,4 +1,4 @@
-package org.demo.hello.consume;
+package org.demo.hello.feign;
 
 import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +15,8 @@ public class ConsumeController {
     @Resource
     private ConsumeService consumeService;
 
-    @RequestMapping(value = "/consumer", method = RequestMethod.GET)
-    public String consumer() {
+    @RequestMapping(value = "/query", method = RequestMethod.GET)
+    public String query() {
         return consumeService.hello();
     }
 }
