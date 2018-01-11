@@ -24,6 +24,12 @@ public class HelloController {
     @Autowired
     private DiscoveryClient client;
 
+    @RequestMapping(value = "/")
+    public String home() {
+        logger.info("Access /");
+        return "Hi!";
+    }
+
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello() {
         List<String> services = client.getServices();

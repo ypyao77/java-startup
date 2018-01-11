@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hello-consume-service
+    name: hello-ribbon-service
 
 server.port: 3331
 

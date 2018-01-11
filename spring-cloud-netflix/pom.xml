@@ -22,6 +22,7 @@
         <module>consume</module>
         <module>ribbon</module>
         <module>hystrix</module>
+        <module>feign</module>
     </modules>
 
     <properties>

@@ -1,8 +1,8 @@
 spring:
   application:
-    name: hello-ribbon-service
+    name: hello-feign-service
 
-server.port: 3330
+server.port: 4001
 
 producer.service.name: hello-produce-service
 
@@ -14,4 +14,4 @@ eureka:
 
   client:
     serviceUrl:
-      defaultZone: http://master:1110/eureka/
+      defaultZone: http://master:1111/eureka/,http://backup:1112/eureka/
