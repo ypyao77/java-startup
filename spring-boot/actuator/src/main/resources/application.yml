@@ -1,0 +1,9 @@
+server:
+    port: 8080
+
+management:
+    #port: 8081
+    #address: 127.0.0.1
+
+info.app_name: My First Spring Boot Application
+info.app_version: 1.0.0

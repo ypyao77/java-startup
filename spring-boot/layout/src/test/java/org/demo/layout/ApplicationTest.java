@@ -55,6 +55,7 @@ public class ApplicationTest {
                 .andExpect(content().string(containsString("Hello, Greg!")));
     }
 
+    /*
     @Test
     public void describe() throws Exception {
         mockMvc.perform(get("/describe"))
@@ -66,4 +67,5 @@ public class ApplicationTest {
         mockMvc.perform(get("/describe").param("name", "Greg"))
                 .andExpect(content().string(containsString("I am, Greg!")));
     }
+    */
 }

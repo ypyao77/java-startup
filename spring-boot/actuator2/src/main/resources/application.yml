@@ -1,0 +1,10 @@
+spring.output.ansi.enabled: ALWAYS
+
+server.port: 8080
+
+#management.port: 9001
+#management.address = 127.0.0.1
+management.security.enabled: false
+
+server.tomcat.accessLogEnabled: true
+server.tomcat.accessLogPattern: %a asdasd
