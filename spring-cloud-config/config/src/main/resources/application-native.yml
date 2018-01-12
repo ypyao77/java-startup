@@ -1,0 +1,27 @@
+server.port: 8033
+
+spring:
+  application:
+    name: config-service-native
+  cloud.config:
+    enabled: true
+    server:
+      native:
+        addLabelLocations: false
+        searchLocations: file:///home/hadoop/src/java-startup/spring-cloud-config/config-repo/
+  #profiles.active: native
+
+eureka:
+  instance:
+    hostname: localhost
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/
+
+logging:
+  levels:
+    org.springframework.boot.env.PropertySourcesLoader: INFO
+    org.springframework.cloud.config.server: INFO

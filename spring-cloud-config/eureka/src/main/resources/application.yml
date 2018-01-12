@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:10086}
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/

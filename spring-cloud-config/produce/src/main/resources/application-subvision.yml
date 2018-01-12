@@ -1,0 +1,12 @@
+server:
+  port: 8001
+
+eureka:
+  instance:
+    hostname: localhost
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+  client:
+    healthcheck:
+      enabled: true

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo.cloud.config
+  cloud:
+    config:
+      profile: prod
+      #label: trunk
+      discovery:
+        enabled: true
+        serviceId: config-service-subvision
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/

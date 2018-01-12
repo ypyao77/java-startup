@@ -1,0 +1,31 @@
+server.port: 8034
+
+spring:
+  application:
+    name: config-service-subvision
+  cloud.config:
+    enabled: true
+    server:
+      svn:
+        # after running config-server, check with: http://arch-od-desktop01.beta1.fn:8034/demo.cloud.config/prod
+        # svn path: http://svnserver01.fn.com/ARCH/onedata/02trunk/demo/test/spring-cloud/config/repo/trunk
+        uri: http://svnserver01.fn.com/ARCH/onedata/02trunk/demo/test/spring-cloud/config/repo
+        username: yunping.yao
+        password: YP!@yp12
+        label: cake
+  #profiles.active: subversion
+
+eureka:
+  instance:
+    hostname: localhost
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10086/eureka/
+
+logging:
+  levels:
+    org.springframework.boot.env.PropertySourcesLoader: INFO
+    org.springframework.cloud.config.server: INFO
