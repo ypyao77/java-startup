@@ -1,0 +1,16 @@
+management.contextPath:
+management.security.enabled: false
+
+server.port: 8080
+
+spring:
+  cloud.consul:
+    host: arch-od-desktop01.beta1.fn
+    port: 8500
+    discovery:
+      healthCheckPath: ${management.contextPath}/health
+      healthCheckInterval: 15s
+      instance-id: consul-miya
+  application.name: consul-miya
+
+
