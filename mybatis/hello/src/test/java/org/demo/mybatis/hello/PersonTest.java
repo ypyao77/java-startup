@@ -29,6 +29,9 @@ public class PersonTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         // 调用 mapper 中的方法：命名空间 + id
-        List<Person> personList = sqlSession.selectList("mybatis/mapper.UserMapper.findAll");
+        List<Person> persons = sqlSession.selectList("person.findAll");
+        for (Person p: persons) {
+            System.out.println(p);
+        }
     }
 }

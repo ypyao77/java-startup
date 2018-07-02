@@ -31,6 +31,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" + "id=" + id + ", name='" + name + '\'' + ", age=" + age + '}';
+        return String.format("Person (id: %-4d    name: %-8s    age: %d)", id, name, age);
     }
 }
