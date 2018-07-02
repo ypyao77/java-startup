@@ -13,10 +13,10 @@
     <module>hello</module>
 
     <module>spring</module>
-    <module>raw</module>
+    <module>spring-raw</module>
 
-    <module>annotation</module>
-    <module>xml</module>
+    <module>sds-annotation</module>
+    <module>sds-xml</module>
 
     <module>mds-annotation</module>
     <module>mds-xml</module>

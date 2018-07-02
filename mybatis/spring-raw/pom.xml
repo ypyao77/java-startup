@@ -11,7 +11,7 @@
 
   <groupId>org.demo</groupId>
   <version>1.0-SNAPSHOT</version>
-  <artifactId>raw</artifactId>
+  <artifactId>spring-raw</artifactId>
   <packaging>jar</packaging>
 
   <properties>
