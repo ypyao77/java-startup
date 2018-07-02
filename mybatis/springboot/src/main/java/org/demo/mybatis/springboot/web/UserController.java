@@ -1,4 +1,4 @@
-package com.neo.web;
+package org.demo.mybatis.springboot.web;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.neo.entity.UserEntity;
-import com.neo.mapper.UserMapper;
+import org.demo.mybatis.springboot.entity.UserEntity;
+import org.demo.mybatis.springboot.mapper.UserMapper;
 
 @RestController
 public class UserController {

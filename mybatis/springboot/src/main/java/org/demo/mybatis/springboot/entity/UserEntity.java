@@ -1,8 +1,8 @@
-package com.neo.entity;
+package org.demo.mybatis.springboot.entity;
 
 import java.io.Serializable;
 
-import com.neo.enums.UserSexEnum;
+import org.demo.mybatis.springboot.enums.UserSexEnum;
 
 public class UserEntity implements Serializable {
 

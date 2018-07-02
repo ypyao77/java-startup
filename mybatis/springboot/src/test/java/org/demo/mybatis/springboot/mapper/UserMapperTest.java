@@ -1,4 +1,4 @@
-package com.neo.mapper;
+package org.demo.mybatis.springboot.mapper;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.neo.entity.UserEntity;
-import com.neo.enums.UserSexEnum;
+import org.demo.mybatis.springboot.entity.UserEntity;
+import org.demo.mybatis.springboot.enums.UserSexEnum;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

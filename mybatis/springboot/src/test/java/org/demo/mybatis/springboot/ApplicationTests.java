@@ -1,4 +1,4 @@
-package com.neo;
+package org.demo.mybatis.springboot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

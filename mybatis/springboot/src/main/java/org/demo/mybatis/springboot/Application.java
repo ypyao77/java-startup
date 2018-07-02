@@ -1,11 +1,11 @@
-package com.neo;
+package org.demo.mybatis.springboot;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.neo.mapper")
+@MapperScan("org.demo.mybatis.springboot.mapper")
 public class Application {
 
 	public static void main(String[] args) {
