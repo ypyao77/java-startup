@@ -16,6 +16,7 @@
     <module>annotation</module>
     <module>xml</module>
 
+    <module>mds-annotation</module>
     <module>mds-xml</module>
   </modules>
 
