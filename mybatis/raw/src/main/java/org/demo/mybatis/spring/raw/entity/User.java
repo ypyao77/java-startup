@@ -1,10 +1,10 @@
-package org.demo.mybatis.mdsannotation.entity;
+package org.demo.mybatis.spring.raw.entity;
 
 import java.io.Serializable;
+import org.demo.mybatis.spring.raw.enums.UserSexEnum;
 
-import org.demo.mybatis.mdsannotation.enums.UserSexEnum;
+public class User implements Serializable {
 
-public class UserEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     private Long id;
     private String userName;
@@ -12,11 +12,11 @@ public class UserEntity implements Serializable {
     private UserSexEnum userSex;
     private String nickName;
 
-    public UserEntity() {
+    public User() {
         super();
     }
 
-    public UserEntity(String userName, String passWord, UserSexEnum userSex) {
+    public User(String userName, String passWord, UserSexEnum userSex) {
         super();
         this.passWord = passWord;
         this.userName = userName;

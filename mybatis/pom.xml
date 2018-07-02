@@ -11,7 +11,9 @@
 
   <modules>
     <module>hello</module>
+
     <module>spring</module>
+    <module>raw</module>
 
     <module>annotation</module>
     <module>xml</module>
