@@ -1,4 +1,4 @@
-package com.hand.ssm.dto;
+package com.hand.ssm.entity;
 
 public class Goods {
 
@@ -40,7 +40,6 @@ public class Goods {
     }
 
     public Goods() {
-
     }
 
     public Goods(long id, String name) {
@@ -59,7 +58,7 @@ public class Goods {
 
     @Override
     public String toString() {
-        return "Goods [name=" + name + ", price=" + price + ", quantity=" + quantity + "]";
+        return String.format("Goods [id: %-3d  name: %8s  quantity: %-3d  price: %10.2f]", id, name, quantity, price);
     }
 
 }

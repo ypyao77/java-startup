@@ -3,7 +3,7 @@ package com.hand.ssm.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.hand.ssm.dao.GoodsDao;
-import com.hand.ssm.dto.Goods;
+import com.hand.ssm.entity.Goods;
 import com.hand.ssm.service.GoodsService;
 
 public class GoodServiceImpl implements GoodsService {
@@ -13,8 +13,6 @@ public class GoodServiceImpl implements GoodsService {
 
     @Override
     public Goods getGood(long goodId) {
-        Goods goods = goodsDao.getGoodByPrimaryKey(goodId);
-        return goods;
+        return goodsDao.getGoodByPrimaryKey(goodId);
     }
-
 }

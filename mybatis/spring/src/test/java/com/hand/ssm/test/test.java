@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.hand.ssm.dao.GoodsDao;
-import com.hand.ssm.dto.Goods;
+import com.hand.ssm.entity.Goods;
 
 public class test {
     public static void main(String[] args) {

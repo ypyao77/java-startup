@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hand.ssm.entity
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://arch-od-tracker01.beta1.fn:3306/test1?useUnicode=true&characterEncoding=utf-8
+    username: hadoop
+    password: hadoop@123

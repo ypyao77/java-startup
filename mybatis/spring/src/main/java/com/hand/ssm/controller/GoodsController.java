@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.hand.ssm.dao.GoodsDao;
-import com.hand.ssm.dto.Goods;
+import com.hand.ssm.entity.Goods;
 
 @Controller
 public class GoodsController {
@@ -25,5 +25,4 @@ public class GoodsController {
         modelAndView.addObject("good", goods);
         return "success";
     }
-
 }
