@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 命名空间，名字可以随意起，只要不冲突即可 -->
-<mapper namespace="person">
+<mapper namespace="UserMapper">
   <!-- 对象映射，可以不写 -->
   <!-- 查询功能，resultType 设置返回值类型 -->
   <select id="findAll" resultType="org.demo.mybatis.hello.Person">

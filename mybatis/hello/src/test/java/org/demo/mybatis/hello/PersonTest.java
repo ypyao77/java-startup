@@ -29,7 +29,7 @@ public class PersonTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         // 调用 mapper 中的方法：命名空间 + id
-        List<Person> persons = sqlSession.selectList("person.findAll");
+        List<Person> persons = sqlSession.selectList("UserMapper.findAll");
         for (Person p: persons) {
             System.out.println(p);
         }

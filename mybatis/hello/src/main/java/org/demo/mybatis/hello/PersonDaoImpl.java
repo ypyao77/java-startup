@@ -15,7 +15,7 @@ public class PersonDaoImpl implements PersonDao {
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = factory.openSession();
 
-        Person person = session.selectOne("person.findById", id); //参数一：namespace.id
+        Person person = session.selectOne("UserMapper.findById", id); //参数一：namespace.id
         session.close();
         return person;
     }
@@ -26,7 +26,7 @@ public class PersonDaoImpl implements PersonDao {
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = factory.openSession();
 
-        List<Person> Persons = session.selectList("person.findAll");
+        List<Person> Persons = session.selectList("UserMapper.findAll");
         session.close();
         return Persons;
     }

@@ -1,7 +1,6 @@
 package com.hand.ssm.service;
 
 import org.springframework.stereotype.Service;
-
 import com.hand.ssm.entity.Goods;
 
 @Service
