@@ -1,0 +1,17 @@
+mybatis:
+    config-locations: classpath:mybatis/mybatis-config.xml
+
+spring:
+  datasource:
+    test1:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://arch-od-tracker01.beta1.fn:3306/test?useUnicode=true&characterEncoding=utf-8
+      username: hadoop
+      password: hadoop@123
+
+    test2:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://arch-od-tracker01.beta1.fn:3306/test?useUnicode=true&characterEncoding=utf-8
+      username: hadoop
+      password: hadoop@123
+
