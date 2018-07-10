@@ -43,10 +43,11 @@
 
     <modules>
         <module>webapp</module>
+        <module>webmvc</module>
+        <module>webjsp</module>
         <module>webclient</module>
         <module>schedule</module>
         <module>upload</module>
-        <module>webmvc</module>
         <module>prop</module>
         <module>gemfire</module>
         <module>async</module>
