@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  mvc.view:
+      prefix: /views/
+      suffix: .jsp
+  thymeleaf.enabled: false
+  thymeleaf.cache: false
+
+# logging.level.org.springframework.web: DEBUG
+
