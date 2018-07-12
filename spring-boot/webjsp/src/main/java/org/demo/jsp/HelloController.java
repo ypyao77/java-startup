@@ -6,20 +6,26 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Controller
 public class HelloController {
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-
-    @RequestMapping("/hello")
-    public String hello(String name) {
-        return "/index";
+    @RequestMapping(value = {"/say1"})
+    public String say1(String name) {
+        return "/greeting?name=Hello.SAY1";
     }
 
-    @RequestMapping(value = "/index")
-    public ModelAndView indexDo(HttpServletRequest request, HttpServletResponse response) {
-        return new ModelAndView("/index");
+    @RequestMapping(value = {"/say2", "say3", "say4"})
+    public ModelAndView say2() {
+        return new ModelAndView("/greeting?name=Hello.SAY2");
+    }
+
+    @RequestMapping(value = {"/", "main"})
+    public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
+        return new ModelAndView("/index.html");
+    }
+
+    @RequestMapping(value = {"jsp"})
+    public ModelAndView jsp(HttpServletRequest request, HttpServletResponse response) {
+        return new ModelAndView("/views/index");
     }
 }

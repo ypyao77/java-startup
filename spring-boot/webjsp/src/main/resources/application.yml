@@ -2,7 +2,12 @@ server:
   port: 8080
 
 spring:
-  mvc:
-    view:
-      prefix: /WEB-INF/jsp/
+  mvc.view:
+      prefix: /WEB-INF/
       suffix: .jsp
+  thymeleaf.enabled: false
+  thymeleaf.cache: false
+
+logging.level:
+  org.springframework.web: DEBUG
+

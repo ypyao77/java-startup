@@ -40,14 +40,21 @@
       <artifactId>tomcat-embed-jasper</artifactId>
       <!--<scope>provided</scope>-->
     </dependency>
-    <!--<dependency>
+    <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
-    </dependency>-->
+    </dependency>
+    <!--
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    -->
   </dependencies>
 
-  <build>
+  <!--<build>
     <resources>
       <resource>
         <directory>src/main/webapp</directory>
@@ -57,5 +64,5 @@
         </includes>
       </resource>
     </resources>
-  </build>
+  </build>-->
 </project>
