@@ -1,4 +1,4 @@
-package org.demo.jsp;
+package org.demo.mix;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,11 +21,11 @@ public class HelloController {
 
     @RequestMapping(value = {"/", "main"})
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
-        return new ModelAndView("/index.html");
+        return new ModelAndView("index.html");
     }
 
     @RequestMapping(value = {"jsp"})
     public ModelAndView jsp(HttpServletRequest request, HttpServletResponse response) {
-        return new ModelAndView("/views/index");
+        return new ModelAndView("hello");
     }
 }

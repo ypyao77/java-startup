@@ -1,4 +1,4 @@
-package org.demo.jsp;
+package org.demo.mix;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -13,13 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 public class GreetingController {
-
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-
     @RequestMapping(value = {"/greeting"})
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "DEFAULT") String name) {
-        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+    public String greeting(@RequestParam(value = "name", defaultValue = "DEFAULT") String name) {
+        return "Hello, " + name;
     }
 
     @RequestMapping(value = {"/do"})

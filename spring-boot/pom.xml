@@ -45,6 +45,7 @@
         <module>webapp</module>
         <module>webmvc</module>
         <module>webjsp</module>
+        <module>webmix</module>
         <module>webclient</module>
         <module>schedule</module>
         <module>upload</module>
