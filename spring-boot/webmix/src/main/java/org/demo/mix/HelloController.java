@@ -26,6 +26,6 @@ public class HelloController {
 
     @RequestMapping(value = {"jsp"})
     public ModelAndView jsp(HttpServletRequest request, HttpServletResponse response) {
-        return new ModelAndView("hello");
+        return new ModelAndView("/views/hello.jsp");
     }
 }
