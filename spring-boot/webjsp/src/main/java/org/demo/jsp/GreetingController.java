@@ -11,22 +11,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
+@RequestMapping("/greeting")
 public class GreetingController {
 
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+    @RequestMapping("/say1")
+    public Greeting say1(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
 
-    /*
-    @RequestMapping(value = "/index.do")
-    public ModelAndView indexDo(HttpServletRequest request, HttpServletResponse response) {
-        return new ModelAndView("/greeting?name=IndexDo");
+    @RequestMapping(value = "/say2")
+    public ModelAndView say2(HttpServletRequest request, HttpServletResponse response) {
+        return new ModelAndView("/greeting/say1?name=say2");
     }
 
+    /*
     @RequestMapping(value = "/index")
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
         return new ModelAndView("/greeting?name=Index");

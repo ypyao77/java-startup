@@ -2,24 +2,29 @@ package org.demo.jsp;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Controller
+@RequestMapping("/hello")
 public class HelloController {
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-
-    @RequestMapping("/hello")
-    public String hello(String name) {
-        return "/index";
+    @RequestMapping("/say1")
+    public String say1() {
+        // return "/index";
+        return "/greeting/say1?name=hello.say1";
     }
 
-    @RequestMapping(value = "/index")
-    public ModelAndView indexDo(HttpServletRequest request, HttpServletResponse response) {
+    @RequestMapping(value = "/say2")
+    public ModelAndView say2(HttpServletRequest request, HttpServletResponse response) {
         return new ModelAndView("/index");
+    }
+
+    @RequestMapping("/say3")
+    @ResponseBody
+    public String say3() {
+        return "hello, say3";
     }
 }
