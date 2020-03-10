@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  jsp-servlet.init-parameters.development: true
+
+#spring:
+#  mvc.view:
+#      prefix: /views/
+#      suffix: .jsp
+#  thymeleaf.enabled: false
+#  thymeleaf.cache: false
+#  thymeleaf.encoding: utf-8
+#  thymeleaf.mode: HTML5
+
+# logging.level.org.springframework.web: DEBUG
+

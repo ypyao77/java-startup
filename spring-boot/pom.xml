@@ -12,8 +12,13 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
         <version>1.5.9.RELEASE</version>
         <!--<version>2.0.3.RELEASE</version>-->
+=======
+        <!--<version>1.5.9.RELEASE</version>-->
+        <version>2.0.3.RELEASE</version>
+>>>>>>> 6fd112f505ec10bb66f53711f50be588ab4ba928
     </parent>
 
     <properties>
@@ -46,6 +51,7 @@
         <module>webapp</module>
         <module>webmvc</module>
         <module>webjsp</module>
+        <module>webmix</module>
         <module>webclient</module>
         <module>schedule</module>
         <module>upload</module>

@@ -1,4 +1,4 @@
-package org.demo.webmvc;
+package org.demo.mix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
